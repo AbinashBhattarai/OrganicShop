@@ -148,12 +148,59 @@ nav span{
 .product-container{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0 8rem;
+  padding: 5rem 0;
 }
+.product-text{
+  font-size: 1.2rem;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
 .product-display{
   display: flex;
+  padding: 1.5rem 3rem;
 }
 .product-box{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 1rem; 
+}
+.product-img{
+  margin-bottom: 0.5rem;
+}
+.product-img img{
+  height: 18rem;
+  width: 18rem;
+}
+.product-description{
+  line-height: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.product-category{
+  margin: auto;
+  color: rgb(51, 51, 51);
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+.product-title{
+  margin: auto;
+  font-weight: bold;
+}
+.product-title-name{
+  font-family: "Merriweather", serif;
+}
+.product-review{
+  margin: auto;
+  color: rgb(51, 51, 51);
+}
+.product-price{
+  margin: auto;
+}
+.product-price-tag{
+  font-family: "Merriweather", serif;
 }

@@ -10,6 +10,20 @@ li{
 a{
   text-decoration: none;
 }
+button{
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  background-color: #6a9739;
+  color: white;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+button:hover{
+  background-color: #8bc34a;
+}
 header{
   width: 100%;
   padding: 1rem 2.5rem;
@@ -61,9 +75,10 @@ nav ul li a:hover{
   height: 1.3rem;
   border-radius: 50%;
   background-color: #8bc34a;
-  padding: 0.1rem 0 0 0.4rem;
+  padding: 0.3rem 0 0 0.4rem;
   top: -0.8rem;
   right: -0.7rem;
+  font-size: 0.7rem;
 }
 .nav-account{
   margin-left: 2rem;
@@ -71,13 +86,24 @@ nav ul li a:hover{
 }
 /* hero section */
 .hero{
-  background-color: rgb(238, 238, 238, 0.3);
+  background-color: rgba(238, 238, 238, 0.3);
   position: relative;
   padding: 6rem 7rem;
+}
+.hero-transparent{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.hero-transparent img{
+  height: 20rem;
+  width: 30rem;
+  opacity: 0.3;
 }
 .hero-container{
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .hero-text{
   padding: 4rem 5rem;
@@ -100,19 +126,8 @@ nav ul li a:hover{
   margin-bottom: 2.5rem;
 }
 .hero-text button{
-  display: flex;
-  align-items: center;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  background-color: #6a9739;
-  color: white;
   font-size: 0.9rem;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
-  cursor: pointer;
-}
-.hero-text button:hover{
-  background-color: #8bc34a;
+  font-weight: bold; 
 }
 .hero-text button span{
   margin-right: 0.7rem;
@@ -218,4 +233,107 @@ nav ul li a:hover{
   border-radius: 50%;
   background-color: #8bc34a;
   font-size: 0.9rem;
+}
+
+/* category section */
+.category{
+  background-color:  #F8F6F3;
+}
+.category-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.category-overlay{
+  position: absolute;
+  top: -2.5rem;
+}
+.category-display{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 7rem;
+  padding: 1rem;
+}
+.category-box{
+  background-color: white;
+  height: 22rem;
+  width: 23rem;
+  /* background-image: url("assets/category-1.jpg"); */
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 17rem;
+  padding: 2rem 1rem 0 2rem;
+  margin-right: 2rem;
+  box-shadow: 0.5rem 0.5rem rgba(199, 199, 199, 0.12);
+  position: relative;
+}
+.category-box h2{
+  font-family: "Merriweather", serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.category-box p{
+  color: #7e7e7e;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.category-box button{
+  font-size: 1rem;
+  position: relative;
+}
+.category-box button span{
+  margin-left: 1rem;
+}
+.category-img{
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  height: 10rem;
+}
+.category-img img{
+  height: 100%;
+  width: 100%;
+}
+
+.goTo-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  padding: 2rem 6rem;
+  position: relative;
+}
+.goTo-text h1{
+  font-family: "Merriweather", serif;
+  font-size: 1.8rem;
+  padding: 2rem;
+  margin-left: 2.5rem;
+}
+.goTo-btn button{
+  margin-right: 5rem;
+  font-size: 0.9rem;
+  font-weight: bold; 
+}
+.goTo-btn button span{
+  margin-right: 0.7rem;
+}
+.goTo-description{
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+}
+.goTo-description h1{
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+}
+.goTo-pointer{
+  height: 2rem;
+  width: 2rem;
+  background-color: rgb(17, 17, 17);
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: rotate(45deg);
 }

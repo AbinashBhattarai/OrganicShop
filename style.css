@@ -207,10 +207,11 @@ nav ul li a:hover{
 }
 .product-title{
   margin: auto;
-  font-weight: bold;
 }
 .product-title-name{
   font-family: "Merriweather", serif;
+  font-weight: bold;
+  color: black;
 }
 .product-review{
   margin: auto;
@@ -224,6 +225,7 @@ nav ul li a:hover{
 }
 .product-price:has(.product-price-new) .product-price-tag{
   text-decoration: line-through;
+  color: rgba(51, 51, 51, 0.683);
 }
 .product-sale{
   position: absolute;
@@ -235,6 +237,7 @@ nav ul li a:hover{
   border-radius: 50%;
   background-color: #8bc34a;
   font-size: 0.9rem;
+  color: black;
 }
 
 /* category section */
@@ -386,10 +389,11 @@ nav ul li a:hover{
 }
 .trending-title{
   margin: auto;
-  font-weight: bold;
 }
 .trending-title-name{
   font-family: "Merriweather", serif;
+  font-weight: bold;
+  color: black;
 }
 .trending-review{
   margin: auto;
@@ -403,6 +407,7 @@ nav ul li a:hover{
 }
 .trending-price:has(.trending-price-new) .trending-price-tag{
   text-decoration: line-through;
+  color: rgba(51, 51, 51, 0.683);
 }
 .trending-sale{
   position: absolute;
